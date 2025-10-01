@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background: #d80027;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+.banner {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 1.2rem;
+}
+.slider-image {
+  width: 100%;
+  display: block;
+}
+.image-overlay-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.feature-image-container{
+    position: relative
+}
+.feature-text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+}
