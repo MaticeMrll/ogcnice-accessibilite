@@ -38,14 +38,29 @@ body {
   font-size: 2rem;
   text-align: center;
 }
-.feature-image-container{
-    position: relative
+.feature-columns {
+  display: flex;
+  gap: 1rem;
+}
+.feature-item {
+  text-align: center;
+}
+.section-features {
+  display: flex;
+}
+
+.feature-image-container {
+  display: flex;
+}
+.feature-image {
+  width: 20%;
+  height: auto;
 }
 .feature-text-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: wrap;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 8px;
