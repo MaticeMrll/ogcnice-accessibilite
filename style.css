@@ -238,6 +238,8 @@ li a{
 .footer-logo{
     padding-right: 4rem;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .footer-logo::after{

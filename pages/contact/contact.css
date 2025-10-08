@@ -209,6 +209,8 @@ li a {
 .footer-logo {
   padding-right: 4rem;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo::after {
@@ -384,6 +386,7 @@ li a {
 /* Devient visible quand on navigue au clavier (Tab) */
 .skip-link:focus {
   top: 10px;
+  outline: 3px solid #4d90fe;
 }
 
 .nav-links a:focus {
