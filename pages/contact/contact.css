@@ -28,7 +28,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 150px;
   box-sizing: border-box;
-  padding: 180px 150px;
+  padding: 220px 150px 50px;
 }
 
 .form-left {
@@ -71,8 +71,17 @@ input {
   font-weight: bold;
 }
 
-h3.title {
+h3.section-title {
   font-size: 1.7rem;
+}
+
+h2.page-title {
+  font-size: 2rem;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  border-bottom: 2px solid var(--muted);
+  z-index: -1;
 }
 
 .required {
@@ -418,6 +427,7 @@ li a {
   padding: 0 16px;
   padding-top: 125px;
   position: absolute;
+  z-index: -1;
 }
 .breadcrumb ol {
   display: flex;
@@ -445,4 +455,34 @@ li a {
   content: "›"; 
   margin: 0 0.5rem 0 0;
   color: var(--muted); 
+}
+
+.content{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-group {
+  margin-top: 1.5rem;
+  text-align: center; 
+  width: fit-content;
+}
+
+.submit-btn {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: fit-content    ;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  outline: 3px solid #4d90fe; /* focus visible */
 }
