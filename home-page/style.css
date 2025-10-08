@@ -1,7 +1,39 @@
+/* Reset de base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+/* Liens d’évitement */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  outline: 2px solid #fff;
+}
+
+/* Classe utilitaire pour titres cachés mais accessibles */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Nav */
 .navbar {
   background: #d80027;
   color: #fff;
@@ -16,6 +48,12 @@ body {
   margin: 0 1rem;
   font-weight: bold;
 }
+.navbar a:focus,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Bandeau */
 .banner {
   background: #222;
   color: #fff;
@@ -23,6 +61,8 @@ body {
   padding: 1.5rem 1rem;
   font-size: 1.2rem;
 }
+
+/* Hero image */
 .slider-image {
   width: 100%;
   display: block;
@@ -31,38 +71,57 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
   border-radius: 1rem;
   padding: 1rem 2rem;
   font-size: 2rem;
   text-align: center;
 }
+
+/* Section features */
+.section-features {
+  padding: 2rem 1rem;
+}
+
+/* !!! classe corrigée : .feature-columns */
 .feature-columns {
   display: flex;
   gap: 1rem;
-}
-.feature-item {
-  text-align: center;
-}
-.section-features {
-  display: flex;
+  flex-wrap: wrap; /* responsive */
+  justify-content: center;
 }
 
+.feature-item {
+  flex: 1 1 280px; /* 3 colonnes, wrap si étroit */
+  max-width: 420px; /* évite des cartes trop larges */
+  text-align: center;
+}
+
+/* Container pour overlay */
 .feature-image-container {
-  display: flex;
+  position: relative; /* nécessaire pour l’overlay */
+  display: block;
 }
+
+/* Images produits à la bonne taille */
 .feature-image {
-  width: 20%;
+  width: 100%; /* plein conteneur */
   height: auto;
+  display: block;
+  border-radius: 8px;
 }
+
+/* Overlay en bas, pleine largeur */
 .feature-text-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: wrap;
-  background: rgba(0, 0, 0, 0.6);
+  right: 0; /* remplace width: wrap (invalide) */
+  background: rgba(0, 0, 0);
   color: #fff;
-  padding: 8px;
+  padding: 8px 12px;
   text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }

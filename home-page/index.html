@@ -8,66 +8,82 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <nav class="navbar" aria-label="Main navigation">
-      <div class="navbar-brand">OGC Nice</div>
-      <div class="navbar-links">
-        <a href="#">Home</a>
-        <a href="#">Team</a>
-        <a href="#">Schedule</a>
-        <a href="#">Contact</a>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header>
+      <nav class="navbar" aria-label="Navigation principale">
+        <div class="navbar-brand" aria-current="page">OGC Nice</div>
+        <div class="navbar-links" role="list">
+          <a href="#" role="listitem">Home</a>
+          <a href="#" role="listitem">Team</a>
+          <a href="#" role="listitem">Schedule</a>
+          <a href="#" role="listitem">Contact</a>
       </div>
     </nav>
-    <div class="banner" role="region" aria-label="Short Info Banner">
+    </header>
+
+    <main id="main">
+      <h1 class="visually-hidden">OGC Nice — Boutique officielle</h1>
+
+      <div class="banner" role="region" aria-labelledby="banner-title">
+        <h2 id="banner-title" class="visually-hidden">Informations rapides</h2>
       Welcome to the official OGC Nice homepage! Stay tuned for the latest news
       and updates.
     </div>
-    <div
-      class="full-width-image-container"
-      style="position: relative; width: 100%"
-    >
+
+      <section aria-labelledby="hero-title">
+        <h2 id="hero-title" class="visually-hidden">Présentation</h2>
+        <div class="full-width-image-container" style="position: relative; width: 100%">
       <img
         src="../media/slider/Slider1.jpg"
-        alt="OGC Nice stadium"
+            alt="Stade de l’OGC Nice"
         class="slider-image"
       />
       <div class="image-overlay-text">
         Découvrez la passion du football avec l'OGC Nice !
       </div>
     </div>
-    <div class="section-features">
-      <h2>Nos Produits Phare</h2>
-      <div class="features-columns">
-        <div class="feature-item">
+      </section>
+
+      <section class="section-features" aria-labelledby="features-title">
+        <h2 id="features-title">Nos Produits Phare</h2>
+
+        <!-- NOTE: classe corrigée en feature-columns (singulier) -->
+        <div class="feature-columns">
+          <article class="feature-item">
           <div class="feature-image-container">
-            <im
+              <img
               src="../media/products/maillot1.jpg"
-              alt="Maillot OGC Nice"
+                alt="Maillot OGC Nice, modèle 1"
               class="feature-image"
             />
             <div class="feature-text-overlay">Maillot 1</div>
           </div>
-        </div>
-        <div class="feature-item">
+          </article>
+
+          <article class="feature-item">
           <div class="feature-image-container">
             <img
               src="../media/products/maillot2.jpg"
-              alt="Maillot OGC Nice"
+                alt="Maillot OGC Nice, modèle 2"
               class="feature-image"
             />
             <div class="feature-text-overlay">Maillot 2</div>
           </div>
-        </div>
-        <div class="feature-item">
+          </article>
+
+          <article class="feature-item">
           <div class="feature-image-container">
             <img
               src="../media/products/maillot3.jpg"
-              alt="Maillot OGC Nice"
+                alt="Maillot OGC Nice, modèle 3"
               class="feature-image"
             />
             <div class="feature-text-overlay">Maillot 3</div>
           </div>
+          </article>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
