@@ -46,7 +46,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 45px;
-  padding: 30px 20px;
+  padding: 10px 20px;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   z-index: 1000;
@@ -70,17 +70,27 @@ body {
 .nav-links a {
   display: block;
   padding: 8px 12px;
-  color: var(--muted);
+  border-radius: 0px;
   text-decoration: none;
+  color: var(--muted);
+  font-size: 1.2rem;
+  white-space: nowrap;
+  font-family: "Gotham-Bold", sans-serif;
   font-weight: 600;
-  border-bottom: 2px solid transparent;
-  transition: 0.2s;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent; /* réserve la place */
+  transition: color 0.2s, border-color 0.2s;
 }
+
 .nav-links a:hover,
 .nav-links a:focus {
   color: var(--accent);
-  border-color: var(--accent);
-  outline: 0;
+  border-bottom: 2px solid var(--accent);
+  border-radius: 0;
+}
+
+.nav-links a:focus {
+  color: var(--accent);
 }
 
 .nav-actions {
@@ -107,7 +117,7 @@ body {
 
 /* ========= Bandeau promo (spécifique blog) ========= */
 .bandeau {
-  margin-top: 110px; /* espace sous la navbar fixe */
+  margin-top: 80px; /* espace sous la navbar fixe */
   background: #2c2a29;
   color: #fff;
   display: flex;
@@ -122,6 +132,7 @@ body {
   max-width: 1100px;
   margin: 16px auto 0;
   padding: 0 16px;
+  position: absolute;
 }
 .breadcrumb ol {
   display: flex;
@@ -133,12 +144,22 @@ body {
 }
 .breadcrumb a {
   text-decoration: none;
-  color: #404040;
+  color: var(--muted);
 }
 .breadcrumb a:hover,
 .breadcrumb a:focus {
   color: var(--accent);
   outline: 0;
+}
+
+.breadcrumb li:last-child a {
+    color: var(--accent);
+}
+
+.breadcrumb li:not(:first-child)::before {
+  content: "›"; 
+  margin: 0 0.5rem 0 0;
+  color: var(--muted); 
 }
 
 /* ========= Article ========= */

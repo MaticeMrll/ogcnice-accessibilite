@@ -406,3 +406,40 @@ li a {
   border: none;
   outline: none;
 }
+
+
+/* ========= Fil d’Ariane ========= */
+.breadcrumb {
+  max-width: 1100px;
+  margin: 16px auto 0;
+  padding: 0 16px;
+  padding-top: 125px;
+  position: absolute;
+}
+.breadcrumb ol {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--muted);
+}
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+  color: var(--accent);
+  outline: 0;
+}
+
+.breadcrumb li:last-child a {
+    color: var(--accent);
+}
+
+.breadcrumb li:not(:first-child)::before {
+  content: "›"; 
+  margin: 0 0.5rem 0 0;
+  color: var(--muted); 
+}
