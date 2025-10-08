@@ -1,304 +1,416 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>OGC Nice | Boutique Officielle | Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <header class="navbar" role="banner">
-        <div class="nav-left">
-            <img src="../../assets/logo/logo_header.png" alt="Logo OGC Nice main" class="nav-logo">
-        </div>
+      <div class="nav-left">
+        <img
+          src="../../assets/logo/logo_header.png"
+          alt="Logo OGC Nice main"
+          class="nav-logo"
+        />
+      </div>
 
-        <nav class="nav-links" role="navigation" aria-label="Main">
-            <ul>
-            <li><a href="../../index.html">Acceuil</a></li>
-            <li><a href="pages/blog/blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-links" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../blog/blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-        <div class="nav-actions">
-            <div class="icons">
-            <button class="icon-btn" aria-label="Rechercher"><i class="fa fa-search"></i></button>
-            <button class="icon-btn" aria-label="Mon compte"><i class="fa fa-user"></i></button>
-            <button class="icon-btn" aria-label="Panier"><i class="fa fa-shopping-cart"></i></button>
-            </div>
+      <div class="nav-actions">
+        <div class="icons">
+          <button class="icon-btn" aria-label="Rechercher">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="icon-btn" aria-label="Mon compte">
+            <i class="fa fa-user"></i>
+          </button>
+          <button class="icon-btn" aria-label="Panier">
+            <i class="fa fa-shopping-cart"></i>
+          </button>
         </div>
+      </div>
     </header>
     <main class="main">
-        <div class="bandeau">
-            <span class="bandeau-text">Découvrez les nouveaux maillots 25/26 - Je découvre</span>
-        </div>
-        <div class="content">
-            <div class="form-container">
-                <!-- Partie gauche -->
-                <div class="form-left">
-                    <h3 class="title" id="main-content">Formulaire de contact</h3>
+      <div class="bandeau">
+        <span class="bandeau-text"
+          >Découvrez les nouveaux maillots 25/26 - Je découvre</span
+        >
+      </div>
+      <div class="content">
+        <div class="form-container">
+          <!-- Partie gauche -->
+          <div class="form-left">
+            <h3 class="title" id="main-content">Formulaire de contact</h3>
 
-                    <div class="form-group">
-                        <label for="prenom">Prénom*</label>
-                        <input type="text" id="prenom" name="prenom" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="nom">Nom*</label>
-                        <input type="text" id="nom" name="nom" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group phone">
-                        <div class="form-group">
-                            <label for="prefix">Préfixe*</label>
-                            <input type="text" id="prefix" name="prefix" placeholder="+33" size="4">
-                        </div>
-                        <div class="form-group">
-                            <label for="telephone">Numéro de téléphone*</label>
-                            <input type="tel" id="telephone" name="telephone">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="commande">Numéro de commande*</label>
-                        <input type="text" id="commande" name="commande">
-                    </div>
-                </div>
-
-                <!-- Partie droite -->
-                <div class="form-right">
-                    <div class="form-group">
-                        <label for="objet">Objet*</label>
-                        <div class="select-wrapper">
-                            <select id="objet" name="objet">
-                                <option value="placeholder" disabled="" selected="">Sélectionnez le sujet de votre demande</option> 
-                                <option value="info">Obtenir un devis</option>
-                                <option value="sav">Obtenir des renseignements sur un produit (infos technique, taille, conseil)</option>
-                                <option value="commande">Obtenir le délai de livraison de ma commande en cours</option>
-                                <option value="autre">Annuler ma commande</option>
-                                <option value="autre">Contacter le SAV (produit défaillant, défectueux, abimé, non conforme)</option>
-                                <option value="autre">Obtenir des informations sur un remboursement en cours</option>
-                                <option value="autre">Données personnelles</option>
-                                <option value="autre">Autre demande (préciser)</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="captcha">
-                            Merci d’entrer les lettres ci-dessous <span class="required">*</span>
-                        </label>
-
-                        <!-- zone d'affichage du captcha (image générée dynamiquement) -->
-                        <div class="captcha-row">
-                            <img id="captchaImg" src="" alt="" aria-live="polite" aria-describedby="captchaDesc" />
-                            <div class="captcha-controls">
-                                <button type="button" id="readCaptchaBtn" aria-label="Lire le captcha">Lire le captcha</button>
-                                <button type="button" id="regenCaptchaBtn" aria-label="Regénérer le captcha">Regénérer</button>
-                            </div>
-                        </div>
-
-                        <!-- champ texte pour l'utilisateur -->
-                        <input type="text" id="captcha" name="captcha" autocomplete="off" aria-describedby="captchaDesc" />
-
-                        <!-- description accessible — mise à jour dynamiquement (pour lecteurs d'écran) -->
-                        <div id="captchaDesc" class="visually-hidden" aria-live="polite"></div>
-                    </div>
-                </div>
+            <div class="form-group">
+              <label for="prenom">Prénom*</label>
+              <input type="text" id="prenom" name="prenom" required />
             </div>
 
+            <div class="form-group">
+              <label for="nom">Nom*</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
 
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group phone">
+              <div class="form-group">
+                <label for="prefix">Préfixe*</label>
+                <input
+                  type="text"
+                  id="prefix"
+                  name="prefix"
+                  placeholder="+33"
+                  size="4"
+                />
+              </div>
+              <div class="form-group">
+                <label for="telephone">Numéro de téléphone*</label>
+                <input type="tel" id="telephone" name="telephone" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="commande">Numéro de commande*</label>
+              <input type="text" id="commande" name="commande" />
+            </div>
+          </div>
+
+          <!-- Partie droite -->
+          <div class="form-right">
+            <div class="form-group">
+              <label for="objet">Objet*</label>
+              <div class="select-wrapper">
+                <select id="objet" name="objet">
+                  <option value="placeholder" disabled="" selected="">
+                    Sélectionnez le sujet de votre demande
+                  </option>
+                  <option value="info">Obtenir un devis</option>
+                  <option value="sav">
+                    Obtenir des renseignements sur un produit (infos technique,
+                    taille, conseil)
+                  </option>
+                  <option value="commande">
+                    Obtenir le délai de livraison de ma commande en cours
+                  </option>
+                  <option value="autre">Annuler ma commande</option>
+                  <option value="autre">
+                    Contacter le SAV (produit défaillant, défectueux, abimé, non
+                    conforme)
+                  </option>
+                  <option value="autre">
+                    Obtenir des informations sur un remboursement en cours
+                  </option>
+                  <option value="autre">Données personnelles</option>
+                  <option value="autre">Autre demande (préciser)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="captcha">
+                Merci d’entrer les lettres ci-dessous
+                <span class="required">*</span>
+              </label>
+
+              <!-- zone d'affichage du captcha (image générée dynamiquement) -->
+              <div class="captcha-row">
+                <img
+                  id="captchaImg"
+                  src=""
+                  alt="captcha"
+                  aria-live="polite"
+                  aria-describedby="captchaDesc"
+                />
+                <div class="captcha-controls">
+                  <button
+                    type="button"
+                    id="readCaptchaBtn"
+                    aria-label="Lire le captcha"
+                  >
+                    Lire le captcha
+                  </button>
+                  <button
+                    type="button"
+                    id="regenCaptchaBtn"
+                    aria-label="Regénérer le captcha"
+                  >
+                    Regénérer
+                  </button>
+                </div>
+              </div>
+
+              <!-- champ texte pour l'utilisateur -->
+              <input
+                type="text"
+                id="captcha"
+                name="captcha"
+                autocomplete="off"
+                aria-describedby="captchaDesc"
+              />
+
+              <!-- description accessible — mise à jour dynamiquement (pour lecteurs d'écran) -->
+              <div
+                id="captchaDesc"
+                class="visually-hidden"
+                aria-live="polite"
+              ></div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <div class="footer-top">
-            <div class="footer-logo">
-                <img src="../../assets/logo/logo_footer.png" alt="Logo OGC Nice">
-            </div>
-            <ul class="reassurance">
-                    <li class="reassurance-securise">
-                        <a href="https://boutique.ogcnice.com/fr/paiement-securise">
-                            <span class="reassurance-text">Paiement sécurisé</span>
-                            <i class="fa fa-lock"></i>
-                        </a>
-                    </li>
-                    <li class="reassurance-livraison">
-                        <a href="https://boutique.ogcnice.com/fr/livraison-24h">
-                            <span class="reassurance-text">Livraison sous 24h</span>
-                            <i class="fa fa-truck"></i>
-                        </a>
-                    </li>
-                    <li class="reassurance-satisfait">
-                        <a href="https://boutique.ogcnice.com/fr/satisfait-ou-rembourse">
-                            <span class="reassurance-text">Satisfait ou remboursé</span>
-                            <i class="fa fa-smile"></i>
-                        </a>
-                    </li>
-                    <li class="reassurance-service">
-                        <a href="https://boutique.ogcnice.com/fr/contact">
-                            <span class="reassurance-text">Service client</span>
-                            <i class="fa fa-headset"></i>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        <div class="footer-legal">
-            <ul class="services">
-                <li class="services-first services-offer"><a href="https://boutique.ogcnice.com/fr/nos-offres-et-conditions">Nos offres et conditions</a></li>
-                <li class="services-rgpd"><a href="https://boutique.ogcnice.com/fr/protection-des-donnees">Protection des données</a></li>
-                <li class="services-contact"><a href="https://boutique.ogcnice.com/fr/contact">Contact</a></li>
-                <li class="services-legal"><a href="https://boutique.ogcnice.com/fr/mentions-legales">Mentions légales</a></li>
-                <li class="cookies"><a href="https://boutique.ogcnice.com/fr/cookies">Cookies</a></li>
-                <li class="cookies-consent"><a href="https://boutique.ogcnice.com/fr/cookies-consent">Gérer mes cookies</a></li>
-                <li class="services-cgv"><a href="https://boutique.ogcnice.com/fr/cgv">CGV</a></li>
-                <li class="Loi AGEC"><a href="https://boutique.ogcnice.com/fr/loi-agec">Loi AGEC</a></li>
-                <li class="guide-des-tailles"><a href="https://boutique.ogcnice.com/fr/guide-des-tailles">Guide des tailles</a></li>
-            </ul>
-
-            <ul class="copyright" style="list-style:none; padding:0; margin:0; text-align:center;">
-                <li><a>© OGC Nice</a></li>
-            </ul>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="../../assets/logo/logo_footer.png" alt="Logo OGC Nice" />
         </div>
+        <ul class="reassurance">
+          <li class="reassurance-securise">
+            <a href="https://boutique.ogcnice.com/fr/paiement-securise">
+              <span class="reassurance-text">Paiement sécurisé</span>
+              <i class="fa fa-lock"></i>
+            </a>
+          </li>
+          <li class="reassurance-livraison">
+            <a href="https://boutique.ogcnice.com/fr/livraison-24h">
+              <span class="reassurance-text">Livraison sous 24h</span>
+              <i class="fa fa-truck"></i>
+            </a>
+          </li>
+          <li class="reassurance-satisfait">
+            <a href="https://boutique.ogcnice.com/fr/satisfait-ou-rembourse">
+              <span class="reassurance-text">Satisfait ou remboursé</span>
+              <i class="fa fa-smile"></i>
+            </a>
+          </li>
+          <li class="reassurance-service">
+            <a href="https://boutique.ogcnice.com/fr/contact">
+              <span class="reassurance-text">Service client</span>
+              <i class="fa fa-headset"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <ul class="services">
+          <li class="services-first services-offer">
+            <a href="https://boutique.ogcnice.com/fr/nos-offres-et-conditions"
+              >Nos offres et conditions</a
+            >
+          </li>
+          <li class="services-rgpd">
+            <a href="https://boutique.ogcnice.com/fr/protection-des-donnees"
+              >Protection des données</a
+            >
+          </li>
+          <li class="services-contact">
+            <a href="https://boutique.ogcnice.com/fr/contact">Contact</a>
+          </li>
+          <li class="services-legal">
+            <a href="https://boutique.ogcnice.com/fr/mentions-legales"
+              >Mentions légales</a
+            >
+          </li>
+          <li class="cookies">
+            <a href="https://boutique.ogcnice.com/fr/cookies">Cookies</a>
+          </li>
+          <li class="cookies-consent">
+            <a href="https://boutique.ogcnice.com/fr/cookies-consent"
+              >Gérer mes cookies</a
+            >
+          </li>
+          <li class="services-cgv">
+            <a href="https://boutique.ogcnice.com/fr/cgv">CGV</a>
+          </li>
+          <li class="Loi AGEC">
+            <a href="https://boutique.ogcnice.com/fr/loi-agec">Loi AGEC</a>
+          </li>
+          <li class="guide-des-tailles">
+            <a href="https://boutique.ogcnice.com/fr/guide-des-tailles"
+              >Guide des tailles</a
+            >
+          </li>
+        </ul>
+
+        <ul
+          class="copyright"
+          style="list-style: none; padding: 0; margin: 0; text-align: center"
+        >
+          <li><a>© OGC Nice</a></li>
+        </ul>
+      </div>
     </footer>
+  </body>
 
-</body>
+  <script>
+    (function () {
+      const captchaImg = document.getElementById("captchaImg");
+      const readBtn = document.getElementById("readCaptchaBtn");
+      const regenBtn = document.getElementById("regenCaptchaBtn");
+      const captchaInput = document.getElementById("captcha");
+      const captchaDesc = document.getElementById("captchaDesc");
 
-<script>
-(function() {
-  const captchaImg = document.getElementById('captchaImg');
-  const readBtn = document.getElementById('readCaptchaBtn');
-  const regenBtn = document.getElementById('regenCaptchaBtn');
-  const captchaInput = document.getElementById('captcha');
-  const captchaDesc = document.getElementById('captchaDesc');
+      // génère une chaîne aléatoire de lettres (mock)
+      function generateCaptchaText(length = 5) {
+        const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // évite O,0, I,1 pour lisibilité
+        let s = "";
+        for (let i = 0; i < length; i++) {
+          s += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return s;
+      }
 
-  // génère une chaîne aléatoire de lettres (mock)
-  function generateCaptchaText(length = 5) {
-    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // évite O,0, I,1 pour lisibilité
-    let s = '';
-    for (let i = 0; i < length; i++) {
-      s += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-    return s;
-  }
+      // dessine le texte dans un canvas et retourne dataURL
+      function renderCaptchaToDataURL(text) {
+        const width = 220;
+        const height = 70;
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext("2d");
 
-  // dessine le texte dans un canvas et retourne dataURL
-  function renderCaptchaToDataURL(text) {
-    const width = 220;
-    const height = 70;
-    const canvas = document.createElement('canvas');
-    canvas.width = width;
-    canvas.height = height;
-    const ctx = canvas.getContext('2d');
+        // background
+        ctx.fillStyle = "#f6f6f6";
+        ctx.fillRect(0, 0, width, height);
 
-    // background
-    ctx.fillStyle = '#f6f6f6';
-    ctx.fillRect(0, 0, width, height);
+        // some noise lines
+        for (let i = 0; i < 5; i++) {
+          ctx.strokeStyle = "rgba(0,0,0,0.08)";
+          ctx.beginPath();
+          ctx.moveTo(Math.random() * width, Math.random() * height);
+          ctx.lineTo(Math.random() * width, Math.random() * height);
+          ctx.stroke();
+        }
 
-    // some noise lines
-    for (let i = 0; i < 5; i++) {
-      ctx.strokeStyle = 'rgba(0,0,0,0.08)';
-      ctx.beginPath();
-      ctx.moveTo(Math.random() * width, Math.random() * height);
-      ctx.lineTo(Math.random() * width, Math.random() * height);
-      ctx.stroke();
-    }
+        // text style
+        ctx.font = "bold 36px sans-serif";
+        ctx.fillStyle = "#0b0b0b";
+        ctx.textBaseline = "middle";
 
-    // text style
-    ctx.font = 'bold 36px sans-serif';
-    ctx.fillStyle = '#0b0b0b';
-    ctx.textBaseline = 'middle';
+        // space out letters for readability
+        const letters = text.split("");
+        const startX = 12;
+        const gap = (width - startX * 2) / letters.length;
+        letters.forEach((ch, i) => {
+          const x = startX + i * gap + (Math.random() * 6 - 3); // léger jitter
+          const y = height / 2 + (Math.random() * 6 - 3);
+          const angle = Math.random() * 0.18 - 0.09; // small rotation
+          ctx.save();
+          ctx.translate(x, y);
+          ctx.rotate(angle);
+          ctx.fillText(ch, 0, 0);
+          ctx.restore();
+        });
 
-    // space out letters for readability
-    const letters = text.split('');
-    const startX = 12;
-    const gap = (width - startX * 2) / letters.length;
-    letters.forEach((ch, i) => {
-      const x = startX + i * gap + (Math.random() * 6 - 3); // léger jitter
-      const y = height / 2 + (Math.random() * 6 - 3);
-      const angle = (Math.random() * 0.18) - 0.09; // small rotation
-      ctx.save();
-      ctx.translate(x, y);
-      ctx.rotate(angle);
-      ctx.fillText(ch, 0, 0);
-      ctx.restore();
-    });
+        // final touch noise dots
+        for (let i = 0; i < 30; i++) {
+          ctx.fillStyle = "rgba(0,0,0,0.07)";
+          ctx.beginPath();
+          ctx.arc(
+            Math.random() * width,
+            Math.random() * height,
+            Math.random() * 1.5,
+            0,
+            Math.PI * 2
+          );
+          ctx.fill();
+        }
 
-    // final touch noise dots
-    for (let i = 0; i < 30; i++) {
-      ctx.fillStyle = 'rgba(0,0,0,0.07)';
-      ctx.beginPath();
-      ctx.arc(Math.random() * width, Math.random() * height, Math.random() * 1.5, 0, Math.PI * 2);
-      ctx.fill();
-    }
+        return canvas.toDataURL("image/png");
+      }
 
-    return canvas.toDataURL('image/png');
-  }
+      // current captcha state
+      let currentCaptcha = "";
 
-  // current captcha state
-  let currentCaptcha = '';
+      function setNewCaptcha() {
+        currentCaptcha = generateCaptchaText(5);
+        captchaImg.src = renderCaptchaToDataURL(currentCaptcha);
+        // alt accessible (lisible) + description lisible:
+        const spaced = currentCaptcha.split("").join(" ");
+        captchaImg.alt = "Captcha : " + spaced;
+        captchaDesc.textContent =
+          "Captcha affiché : " +
+          spaced +
+          '. Si vous utilisez la lecture vocale, appuyez sur le bouton "Lire le captcha".';
+        // clear input
+        captchaInput.value = "";
+        // for screen reader announce
+        captchaDesc.setAttribute("aria-live", "polite");
+      }
 
-  function setNewCaptcha() {
-    currentCaptcha = generateCaptchaText(5);
-    captchaImg.src = renderCaptchaToDataURL(currentCaptcha);
-    // alt accessible (lisible) + description lisible:
-    const spaced = currentCaptcha.split('').join(' ');
-    captchaImg.alt = 'Captcha : ' + spaced;
-    captchaDesc.textContent = 'Captcha affiché : ' + spaced + '. Si vous utilisez la lecture vocale, appuyez sur le bouton "Lire le captcha".';
-    // clear input
-    captchaInput.value = '';
-    // for screen reader announce
-    captchaDesc.setAttribute('aria-live', 'polite');
-  }
+      // lecture du captcha (utilise speechSynthesis si possible)
+      function readCaptcha() {
+        // prioriser le texte lisible (ex: "A B C D E")
+        const spaced = currentCaptcha.split("").join(" ");
+        const utterText = "Les lettres du captcha sont : " + spaced;
+        // try speechSynthesis
+        if ("speechSynthesis" in window) {
+          const utter = new SpeechSynthesisUtterance(utterText);
+          // optional: francophone voice preference
+          const voices = speechSynthesis.getVoices?.() || [];
+          // try to pick a french voice if available
+          const frVoice = voices.find(
+            (v) => /fr|french/i.test(v.lang) || /fr-/.test(v.lang)
+          );
+          if (frVoice) utter.voice = frVoice;
+          // slower rate for clarity
+          utter.rate = 0.95;
+          speechSynthesis.cancel(); // stop any current
+          speechSynthesis.speak(utter);
+        } else {
+          // fallback: update aria-live and alert
+          captchaDesc.textContent = "Lecture du captcha : " + spaced;
+          alert("Captcha : " + spaced);
+        }
+      }
 
-  // lecture du captcha (utilise speechSynthesis si possible)
-  function readCaptcha() {
-    // prioriser le texte lisible (ex: "A B C D E")
-    const spaced = currentCaptcha.split('').join(' ');
-    const utterText = 'Les lettres du captcha sont : ' + spaced;
-    // try speechSynthesis
-    if ('speechSynthesis' in window) {
-      const utter = new SpeechSynthesisUtterance(utterText);
-      // optional: francophone voice preference
-      const voices = speechSynthesis.getVoices?.() || [];
-      // try to pick a french voice if available
-      const frVoice = voices.find(v => /fr|french/i.test(v.lang) || /fr-/.test(v.lang));
-      if (frVoice) utter.voice = frVoice;
-      // slower rate for clarity
-      utter.rate = 0.95;
-      speechSynthesis.cancel(); // stop any current
-      speechSynthesis.speak(utter);
-    } else {
-      // fallback: update aria-live and alert
-      captchaDesc.textContent = 'Lecture du captcha : ' + spaced;
-      alert('Captcha : ' + spaced);
-    }
-  }
+      // initialisation
+      setNewCaptcha();
 
-  // initialisation
-  setNewCaptcha();
+      // événements
+      readBtn.addEventListener("click", function () {
+        readCaptcha();
+      });
 
-  // événements
-  readBtn.addEventListener('click', function() {
-    readCaptcha();
-  });
-
-  regenBtn.addEventListener('click', function() {
-    setNewCaptcha();
-  });$
-})();
-</script>
+      regenBtn.addEventListener("click", function () {
+        setNewCaptcha();
+      });
+      $;
+    })();
+  </script>
 </html>
