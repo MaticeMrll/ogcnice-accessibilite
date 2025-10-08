@@ -1,215 +1,336 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Notre boutique OGC Nice devient plus accessible : résumé des améliorations, engagements et moyens de contact." />
+    <meta
+      name="description"
+      content="Notre boutique OGC Nice devient plus accessible : résumé des améliorations, engagements et moyens de contact."
+    />
     <link rel="stylesheet" href="blog.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>OGC Nice | Boutique Officielle — Accessibilité</title>
-</head>
-<body>
+  </head>
+  <body>
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
     <header class="navbar" role="banner">
-        <div class="nav-left">
-            <img src="../../assets/logo/logo_header.png" alt="Logo principal OGC Nice" class="nav-logo" />
-        </div>
+      <div class="nav-left">
+        <img
+          src="../../assets/logo/logo_header.png"
+          alt="Logo principal OGC Nice"
+          class="nav-logo"
+        />
+      </div>
 
-        <nav class="nav-links" role="navigation" aria-label="Navigation principale">
-            <ul>
-                <li><a href="../../index.html">Acceuil</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav
+        class="nav-links"
+        role="navigation"
+        aria-label="Navigation principale"
+      >
+        <ul>
+          <li><a href="../../index.html">Acceuil</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-        <div class="nav-actions">
-            <div class="icons" role="group" aria-label="Actions rapides">
-                <button class="icon-btn" aria-label="Rechercher"><i class="fa fa-search" aria-hidden="true"></i></button>
-                <button class="icon-btn" aria-label="Mon compte"><i class="fa fa-user" aria-hidden="true"></i></button>
-                <button class="icon-btn" aria-label="Panier"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-            </div>
+      <div class="nav-actions">
+        <div class="icons" role="group" aria-label="Actions rapides">
+          <button class="icon-btn" aria-label="Rechercher">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+          <button class="icon-btn" aria-label="Mon compte">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </button>
+          <button class="icon-btn" aria-label="Panier">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </button>
         </div>
+      </div>
     </header>
 
     <div class="bandeau" role="region" aria-label="Information promotionnelle">
-        <span class="bandeau-text">Découvrez les nouveaux maillots 25/26 — Je découvre</span>
+      <span class="bandeau-text"
+        >Découvrez les nouveaux maillots 25/26 — Je découvre</span
+      >
     </div>
 
     <!-- Fil d’Ariane -->
     <nav class="breadcrumb" aria-label="Fil d’Ariane">
-        <ol>
-            <li><a href="../../index.html">Accueil</a></li>
-            <li><a href="#" aria-current="page">Actualités</a></li>
-        </ol>
+      <ol>
+        <li><a href="../../index.html">Accueil</a></li>
+        <li><a href="#" aria-current="page">Actualités</a></li>
+      </ol>
     </nav>
 
     <main id="main-content" class="main" role="main">
-        <article class="blog-article" aria-labelledby="post-title">
-            <header class="post-header">
-                <h1 id="post-title">Notre boutique devient plus accessible — et on en est fiers !</h1>
+      <article class="blog-article" aria-labelledby="post-title">
+        <header class="post-header">
+          <h1 id="post-title">
+            Notre boutique devient plus accessible — et on en est fiers !
+          </h1>
 
-                <p class="post-meta">
-                    <time datetime="2025-10-08" aria-label="Publié le 8 octobre 2025">8 octobre 2025</time>
-                    • <span>OGC Nice — Boutique officielle</span>
-                    • <span aria-label="Temps de lecture">Lecture : ~3 min</span>
-                </p>
+          <p class="post-meta">
+            <time datetime="2025-10-08" aria-label="Publié le 8 octobre 2025"
+              >8 octobre 2025</time
+            >
+            • <span>OGC Nice — Boutique officielle</span> •
+            <span aria-label="Temps de lecture">Lecture : ~3 min</span>
+          </p>
 
-                <!-- Sommaire interne -->
-                <nav class="post-toc" aria-label="Sommaire de l’article">
-                    <h2 class="visually-hidden">Sommaire</h2>
-                    <ul>
-                        <li><a href="#pourquoi">Pourquoi c’est important</a></li>
-                        <li><a href="#ce-qui-change">Ce qui change concrètement</a></li>
-                        <li><a href="#engagements">Nos engagements continus</a></li>
-                        <li><a href="#contacter">Besoin d’aide ? Contactez-nous</a></li>
-                    </ul>
-                </nav>
-            </header>
+          <!-- Sommaire interne -->
+          <nav class="post-toc" aria-label="Sommaire de l’article">
+            <h2 class="visually-hidden">Sommaire</h2>
+            <ul>
+              <li><a href="#pourquoi">Pourquoi c’est important</a></li>
+              <li><a href="#ce-qui-change">Ce qui change concrètement</a></li>
+              <li><a href="#engagements">Nos engagements continus</a></li>
+              <li><a href="#contacter">Besoin d’aide ? Contactez-nous</a></li>
+            </ul>
+          </nav>
+        </header>
 
-            <figure class="post-figure">
-                <img src="../../assets/media/slider/Slider1.jpg" alt="Supporters de l’OGC Nice de dos debout avec un maillot" />
-                <figcaption>Une boutique pensée pour toutes et tous, sur mobile comme sur ordinateur.</figcaption>
-            </figure>
+        <figure class="post-figure">
+          <img
+            src="../../assets/media/slider/Slider1.jpg"
+            alt="Supporters de l’OGC Nice de dos debout avec un maillot"
+          />
+          <figcaption>
+            Une boutique pensée pour toutes et tous, sur mobile comme sur
+            ordinateur.
+          </figcaption>
+        </figure>
 
-            <section id="pourquoi">
-                <h2>Pourquoi c’est important</h2>
-                <p>
-                    Rendre la boutique accessible, ce n’est pas un “bonus”. C’est essentiel pour que chaque
-                    supporter et chaque supportrice puisse acheter, s’informer et échanger avec nous sans
-                    obstacles, quels que soient son équipement, ses capacités visuelles, auditives, motrices
-                    ou cognitives.
-                </p>
-                <details>
-                    <summary>Notre objectif en une phrase</summary>
-                    <p>Conformer la boutique aux bonnes pratiques du RGAA/WCAG tout en offrant une expérience claire, rapide et inclusive.</p>
-                </details>
-            </section>
+        <section id="pourquoi">
+          <h2>Pourquoi c’est important</h2>
+          <p>
+            Rendre la boutique accessible, ce n’est pas un “bonus”. C’est
+            essentiel pour que chaque supporter et chaque supportrice puisse
+            acheter, s’informer et échanger avec nous sans obstacles, quels que
+            soient son équipement, ses capacités visuelles, auditives, motrices
+            ou cognitives.
+          </p>
+          <details>
+            <summary>Notre objectif en une phrase</summary>
+            <p>
+              Conformer la boutique aux bonnes pratiques du RGAA/WCAG tout en
+              offrant une expérience claire, rapide et inclusive.
+            </p>
+          </details>
+        </section>
 
-            <section id="ce-qui-change">
-                <h2>Ce qui change concrètement</h2>
-                <ul>
-                    <li>Navigation clavier fluide : ordre logique du focus, liens “Aller au contenu”, éléments interactifs visibles au focus.</li>
-                    <li>Alternatives textuelles : images et icônes ont des <em>alt</em> pertinents ou sont ignorées si décoratives.</li>
-                    <li>Couleurs et contrastes renforcés pour une meilleure lisibilité.</li>
-                    <li>Structure sémantique : titres hiérarchisés, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, tableaux correctement annoncés.</li>
-                    <li>Formulaires plus clairs : étiquettes associées, messages d’erreur compréhensibles, aides au remplissage.</li>
-                    <li>CAPTCHA accessible : alternative audio et annonce pour lecteurs d’écran.</li>
-                </ul>
-                <p>
-                    Nous testons régulièrement avec lecteurs d’écran (NVDA, VoiceOver) et outils de validation
-                    afin d’identifier ce qui peut encore être amélioré.
-                </p>
-            </section>
+        <section id="ce-qui-change">
+          <h2>Ce qui change concrètement</h2>
+          <ul>
+            <li>
+              Navigation clavier fluide : ordre logique du focus, liens “Aller
+              au contenu”, éléments interactifs visibles au focus.
+            </li>
+            <li>
+              Alternatives textuelles : images et icônes ont des
+              <em>alt</em> pertinents ou sont ignorées si décoratives.
+            </li>
+            <li>
+              Couleurs et contrastes renforcés pour une meilleure lisibilité.
+            </li>
+            <li>
+              Structure sémantique : titres hiérarchisés,
+              <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+              <code>&lt;article&gt;</code>, tableaux correctement annoncés.
+            </li>
+            <li>
+              Formulaires plus clairs : étiquettes associées, messages d’erreur
+              compréhensibles, aides au remplissage.
+            </li>
+            <li>
+              CAPTCHA accessible : alternative audio et annonce pour lecteurs
+              d’écran.
+            </li>
+          </ul>
+          <p>
+            Nous testons régulièrement avec lecteurs d’écran (NVDA, VoiceOver)
+            et outils de validation afin d’identifier ce qui peut encore être
+            amélioré.
+          </p>
+        </section>
 
-            <section id="engagements">
-                <h2>Nos engagements continus</h2>
-                <ol>
-                    <li>Mises à jour régulières à chaque nouvelle fonctionnalité.</li>
-                    <li>Revue d’accessibilité à chaque refonte de design.</li>
-                    <li>Canal de retours dédié pour vos suggestions et signalements.</li>
-                </ol>
-                <blockquote>
-                    “L’accessibilité n’est pas un état final, c’est un processus d’amélioration continue.”
-                </blockquote>
-            </section>
+        <section id="engagements">
+          <h2>Nos engagements continus</h2>
+          <ol>
+            <li>Mises à jour régulières à chaque nouvelle fonctionnalité.</li>
+            <li>Revue d’accessibilité à chaque refonte de design.</li>
+            <li>
+              Canal de retours dédié pour vos suggestions et signalements.
+            </li>
+          </ol>
+          <blockquote>
+            “L’accessibilité n’est pas un état final, c’est un processus
+            d’amélioration continue.”
+          </blockquote>
+        </section>
 
-            <section id="contacter" aria-labelledby="contacter-title">
-                <h2 id="contacter-title">Besoin d’aide ? Contactez-nous</h2>
-                <p>
-                    Une barrière rencontrée sur le site ? Dites-nous tout. Nous nous engageons à
-                    vous répondre rapidement et à corriger le problème.
-                </p>
-                <p>
-                    <a class="btn" href="../contact/contact.html" aria-label="Aller au formulaire de contact">Accéder au formulaire de contact</a>
-                </p>
-            </section>
+        <section id="contacter" aria-labelledby="contacter-title">
+          <h2 id="contacter-title">Besoin d’aide ? Contactez-nous</h2>
+          <p>
+            Une barrière rencontrée sur le site ? Dites-nous tout. Nous nous
+            engageons à vous répondre rapidement et à corriger le problème.
+          </p>
+          <p>
+            <a
+              class="btn"
+              href="../contact/contact.html"
+              aria-label="Aller au formulaire de contact"
+              >Accéder au formulaire de contact</a
+            >
+          </p>
+        </section>
 
-            <footer class="post-footer" aria-label="Partager l’article">
-                <div class="share" role="group" aria-label="Partager">
-                    <a class="share-link" href="https://twitter.com/intent/tweet?text=Boutique%20OGC%20Nice%20accessible&url=https://exemple" target="_blank" rel="noopener" aria-label="Partager sur X (nouvelle fenêtre)">
-                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> <span class="sr-only">X</span>
-                    </a>
-                    <a class="share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://exemple" target="_blank" rel="noopener" aria-label="Partager sur Facebook (nouvelle fenêtre)">
-                        <i class="fa-brands fa-facebook" aria-hidden="true"></i> <span class="sr-only">Facebook</span>
-                    </a>
-                    <a class="share-link" href="mailto:?subject=Boutique%20OGC%20Nice%20Accessible&body=Je%20partage%20cet%20article%20:%20https://exemple" aria-label="Partager par e-mail">
-                        <i class="fa-solid fa-envelope" aria-hidden="true"></i> <span class="sr-only">E-mail</span>
-                    </a>
-                </div>
-                <p class="back-link"><a href="../../index.html">← Retour à la boutique</a></p>
-            </footer>
-        </article>
+        <footer class="post-footer" aria-label="Partager l’article">
+          <div class="share" role="group" aria-label="Partager">
+            <a
+              class="share-link"
+              href="https://twitter.com/intent/tweet?text=Boutique%20OGC%20Nice%20accessible&url=https://exemple"
+              target="_blank"
+              rel="noopener"
+              aria-label="Partager sur X (nouvelle fenêtre)"
+            >
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              <span class="sr-only">X</span>
+            </a>
+            <a
+              class="share-link"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://exemple"
+              target="_blank"
+              rel="noopener"
+              aria-label="Partager sur Facebook (nouvelle fenêtre)"
+            >
+              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a
+              class="share-link"
+              href="mailto:?subject=Boutique%20OGC%20Nice%20Accessible&body=Je%20partage%20cet%20article%20:%20https://exemple"
+              aria-label="Partager par e-mail"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">E-mail</span>
+            </a>
+          </div>
+          <p class="back-link">
+            <a href="../../index.html">← Retour à la boutique</a>
+          </p>
+        </footer>
+      </article>
     </main>
 
     <footer class="site-footer" role="contentinfo">
-        <div class="footer-top" aria-label="Informations de confiance">
-            <div class="footer-logo">
-                <img src="https://boutique.ogcnice.com/static/version1750757751/frontend/Oreca/OGC/fr_FR/images/logo_footer.png" alt="Logo OGC Nice" />
-            </div>
-            <ul class="reassurance">
-                <li class="reassurance-securise">
-                    <a href="https://boutique.ogcnice.com/fr/paiement-securise">
-                        <span class="reassurance-text">Paiement sécurisé</span>
-                        <i class="fa fa-lock" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="reassurance-livraison">
-                    <a href="https://boutique.ogcnice.com/fr/livraison-24h">
-                        <span class="reassurance-text">Livraison sous 24h</span>
-                        <i class="fa fa-truck" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="reassurance-satisfait">
-                    <a href="https://boutique.ogcnice.com/fr/satisfait-ou-rembourse">
-                        <span class="reassurance-text">Satisfait ou remboursé</span>
-                        <i class="fa fa-smile" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="reassurance-service">
-                    <a href="https://boutique.ogcnice.com/fr/contact">
-                        <span class="reassurance-text">Service client</span>
-                        <i class="fa fa-headset" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
+      <div class="footer-top" aria-label="Informations de confiance">
+        <div class="footer-logo">
+          <img
+            src="https://boutique.ogcnice.com/static/version1750757751/frontend/Oreca/OGC/fr_FR/images/logo_footer.png"
+            alt="Logo OGC Nice"
+          />
         </div>
+        <ul class="reassurance">
+          <li class="reassurance-securise">
+            <a href="https://boutique.ogcnice.com/fr/paiement-securise">
+              <span class="reassurance-text">Paiement sécurisé</span>
+              <i class="fa fa-lock" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="reassurance-livraison">
+            <a href="https://boutique.ogcnice.com/fr/livraison-24h">
+              <span class="reassurance-text">Livraison sous 24h</span>
+              <i class="fa fa-truck" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="reassurance-satisfait">
+            <a href="https://boutique.ogcnice.com/fr/satisfait-ou-rembourse">
+              <span class="reassurance-text">Satisfait ou remboursé</span>
+              <i class="fa fa-smile" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="reassurance-service">
+            <a href="https://boutique.ogcnice.com/fr/contact">
+              <span class="reassurance-text">Service client</span>
+              <i class="fa fa-headset" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="footer-legal">
-            <ul class="services">
-                <li class="services-offer"><a href="https://boutique.ogcnice.com/fr/nos-offres-et-conditions">Nos offres et conditions</a></li>
-                <li class="services-rgpd"><a href="https://boutique.ogcnice.com/fr/protection-des-donnees">Protection des données</a></li>
-                <li class="services-contact"><a href="https://boutique.ogcnice.com/fr/contact">Contact</a></li>
-                <li class="services-legal"><a href="https://boutique.ogcnice.com/fr/mentions-legales">Mentions légales</a></li>
-                <li class="cookies"><a href="https://boutique.ogcnice.com/fr/cookies">Cookies</a></li>
-                <li class="cookies-consent"><a href="https://boutique.ogcnice.com/fr/cookies-consent">Gérer mes cookies</a></li>
-                <li class="services-cgv"><a href="https://boutique.ogcnice.com/fr/cgv">CGV</a></li>
-                <li class="loi-agec"><a href="https://boutique.ogcnice.com/fr/loi-agec">Loi AGEC</a></li>
-                <li class="guide-des-tailles"><a href="https://boutique.ogcnice.com/fr/guide-des-tailles">Guide des tailles</a></li>
-            </ul>
+      <div class="footer-legal">
+        <ul class="services">
+          <li class="services-offer">
+            <a href="https://boutique.ogcnice.com/fr/nos-offres-et-conditions"
+              >Nos offres et conditions</a
+            >
+          </li>
+          <li class="services-rgpd">
+            <a href="https://boutique.ogcnice.com/fr/protection-des-donnees"
+              >Protection des données</a
+            >
+          </li>
+          <li class="services-contact">
+            <a href="https://boutique.ogcnice.com/fr/contact">Contact</a>
+          </li>
+          <li class="services-legal">
+            <a href="https://boutique.ogcnice.com/fr/mentions-legales"
+              >Mentions légales</a
+            >
+          </li>
+          <li class="cookies">
+            <a href="https://boutique.ogcnice.com/fr/cookies">Cookies</a>
+          </li>
+          <li class="cookies-consent">
+            <a href="https://boutique.ogcnice.com/fr/cookies-consent"
+              >Gérer mes cookies</a
+            >
+          </li>
+          <li class="services-cgv">
+            <a href="https://boutique.ogcnice.com/fr/cgv">CGV</a>
+          </li>
+          <li class="loi-agec">
+            <a href="https://boutique.ogcnice.com/fr/loi-agec">Loi AGEC</a>
+          </li>
+          <li class="guide-des-tailles">
+            <a href="https://boutique.ogcnice.com/fr/guide-des-tailles"
+              >Guide des tailles</a
+            >
+          </li>
+        </ul>
 
-            <p class="copyright">© OGC Nice</p>
-        </div>
+        <p class="copyright">© OGC Nice</p>
+      </div>
     </footer>
 
     <script>
-    // Petite amélioration d’accessibilité : forcer l’annonce visuelle du focus sur les liens d’ancre
-    (function () {
-        const tocLinks = document.querySelectorAll('.post-toc a');
-        tocLinks.forEach(a => {
-            a.addEventListener('click', () => {
-                const id = a.getAttribute('href').replace('#', '');
-                const target = document.getElementById(id);
-                if (target) {
-                    // Donne le focus au titre de section arrivé
-                    target.setAttribute('tabindex', '-1');
-                    target.focus({ preventScroll: true });
-                }
-            });
+      // Petite amélioration d’accessibilité : forcer l’annonce visuelle du focus sur les liens d’ancre
+      (function () {
+        const tocLinks = document.querySelectorAll(".post-toc a");
+        tocLinks.forEach((a) => {
+          a.addEventListener("click", () => {
+            const id = a.getAttribute("href").replace("#", "");
+            const target = document.getElementById(id);
+            if (target) {
+              // Donne le focus au titre de section arrivé
+              target.setAttribute("tabindex", "-1");
+              target.focus({ preventScroll: true });
+            }
+          });
         });
-    })();
+      })();
     </script>
-</body>
+  </body>
 </html>
