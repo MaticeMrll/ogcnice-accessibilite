@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   overflow-x: hidden;
 }
@@ -99,7 +99,7 @@ body {
 
 .feature-item {
   flex: 1 1 280px;
-  max-width: 420px;
+  max-width: 23rem;
   text-align: center;
 }
 
@@ -222,7 +222,7 @@ body {
 
 .vente-title-on-slider {
   position: absolute;
-  top: -50%;
+  top: -40%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.95);
@@ -481,23 +481,22 @@ li a {
   outline: none;
 }
 
-
-.feature-columns a:focus{
+.feature-columns a:focus {
   border-radius: 8px;
   outline: 3px solid #4d90fe;
 }
 
-.feature-columns a{
+.feature-columns a {
   cursor: pointer;
 }
 
-.vente-produits a:focus{
+.vente-produits a:focus {
   border-radius: 8px;
   outline: 3px solid #4d90fe;
   border: none;
 }
 
-.vente-produits a{
+.vente-produits a {
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
