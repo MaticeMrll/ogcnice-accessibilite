@@ -5,24 +5,39 @@
     <title>OGC Nice | Boutique Officiel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
 
-    <header>
-      <nav class="navbar" aria-label="Navigation principale">
-        <div class="navbar-brand" aria-current="page">OGC Nice</div>
-        <div class="navbar-links" role="list">
-          <a href="#" role="listitem">Home</a>
-          <a href="#" role="listitem">Team</a>
-          <a href="#" role="listitem">Schedule</a>
-          <a href="#" role="listitem">Contact</a>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="navbar" role="banner">
+        <div class="nav-left">
+            <img src="../../assets/logo/logo_header.png" alt="Logo OGC Nice" class="nav-logo">
         </div>
-      </nav>
+
+        <nav class="nav-links" role="navigation" aria-label="Main">
+            <ul>
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="pages/blog/blog.html">Blog</a></li>
+            <li><a href="pages/contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <div class="icons">
+            <button class="icon-btn" aria-label="Rechercher"><i class="fa fa-search"></i></button>
+            <button class="icon-btn" aria-label="Mon compte"><i class="fa fa-user"></i></button>
+            <button class="icon-btn" aria-label="Panier"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+        </div>
     </header>
 
     <main id="main">
+      <div class="bandeau">
+            <span class="bandeau-text">Découvrez les nouveaux maillots 25/26 - Je découvre</span>
+        </div>
       <h1 class="visually-hidden">OGC Nice — Boutique officielle</h1>
 
       <div class="banner" role="region" aria-labelledby="banner-title">
@@ -35,7 +50,7 @@
         <h2 id="hero-title" class="visually-hidden">Présentation</h2>
         <div class="full-width-image-container" style="position: relative; width: 100%">
           <img
-            src="../media/slider/Slider1.jpg"
+            src="./assets/media/slider/Slider1.jpg"
             alt="Stade de l'OGC Nice"
             class="slider-image"
           />
@@ -53,7 +68,7 @@
           <article class="feature-item">
             <div class="feature-image-container">
               <img
-                src="../media/products/maillot1.jpg"
+                src="./assets/media/products/maillot1.jpg"
                 alt="Maillot OGC Nice, modèle 1"
                 class="feature-image"
               />
@@ -64,7 +79,7 @@
           <article class="feature-item">
             <div class="feature-image-container">
               <img
-                src="../media/products/maillot2.jpg"
+                src="./assets/media/products/maillot2.jpg"
                 alt="Maillot OGC Nice, modèle 2"
                 class="feature-image"
               />
@@ -75,7 +90,7 @@
           <article class="feature-item">
             <div class="feature-image-container">
               <img
-                src="../media/products/maillot3.jpg"
+                src="./assets/media//products/maillot3.jpg"
                 alt="Maillot OGC Nice, modèle 3"
                 class="feature-image"
               />
@@ -85,5 +100,56 @@
         </div>
       </section>
     </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../../assets/logo/logo_footer.png" alt="Logo OGC Nice">
+            </div>
+            <ul class="reassurance">
+                    <li class="reassurance-securise">
+                        <a href="https://boutique.ogcnice.com/fr/paiement-securise">
+                            <span class="reassurance-text">Paiement sécurisé</span>
+                            <i class="fa fa-lock"></i>
+                        </a>
+                    </li>
+                    <li class="reassurance-livraison">
+                        <a href="https://boutique.ogcnice.com/fr/livraison-24h">
+                            <span class="reassurance-text">Livraison sous 24h</span>
+                            <i class="fa fa-truck"></i>
+                        </a>
+                    </li>
+                    <li class="reassurance-satisfait">
+                        <a href="https://boutique.ogcnice.com/fr/satisfait-ou-rembourse">
+                            <span class="reassurance-text">Satisfait ou remboursé</span>
+                            <i class="fa fa-smile"></i>
+                        </a>
+                    </li>
+                    <li class="reassurance-service">
+                        <a href="https://boutique.ogcnice.com/fr/contact">
+                            <span class="reassurance-text">Service client</span>
+                            <i class="fa fa-headset"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        <div class="footer-legal">
+            <ul class="services">
+                <li class="services-first services-offer"><a href="https://boutique.ogcnice.com/fr/nos-offres-et-conditions">Nos offres et conditions</a></li>
+                <li class="services-rgpd"><a href="https://boutique.ogcnice.com/fr/protection-des-donnees">Protection des données</a></li>
+                <li class="services-contact"><a href="https://boutique.ogcnice.com/fr/contact">Contact</a></li>
+                <li class="services-legal"><a href="https://boutique.ogcnice.com/fr/mentions-legales">Mentions légales</a></li>
+                <li class="cookies"><a href="https://boutique.ogcnice.com/fr/cookies">Cookies</a></li>
+                <li class="cookies-consent"><a href="https://boutique.ogcnice.com/fr/cookies-consent">Gérer mes cookies</a></li>
+                <li class="services-cgv"><a href="https://boutique.ogcnice.com/fr/cgv">CGV</a></li>
+                <li class="Loi AGEC"><a href="https://boutique.ogcnice.com/fr/loi-agec">Loi AGEC</a></li>
+                <li class="guide-des-tailles"><a href="https://boutique.ogcnice.com/fr/guide-des-tailles">Guide des tailles</a></li>
+            </ul>
+
+            <ul class="copyright" style="list-style:none; padding:0; margin:0; text-align:center;">
+                <li><a>© OGC Nice</a></li>
+            </ul>
+        </div>
+    </footer>
   </body>
 </html>
