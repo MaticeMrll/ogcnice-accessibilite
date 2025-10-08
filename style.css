@@ -79,6 +79,20 @@ body {
   text-align: center;
 }
 
+.image-overlay-text-second {
+  position: absolute;
+  width: 25%;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  background-color: rgba(200, 200, 200, 0.9);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
 /* Section features */
 .section-features {
   padding: 2rem 1rem;
@@ -179,4 +193,19 @@ body {
 .vente-prix {
   font-size: 1.2rem;
   color: #000;
+}
+
+.centered-slider-image {
+  position: absolute;
+  border-radius: 2rem;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#image-on-slider {
+  width: 15rem;
+  height: auto;
+  border-radius: 1rem;
 }
