@@ -508,7 +508,7 @@ li a {
 }
 
 a.header-link{
-  color: var(--accent);
+  color: #89b6ff;
   transition: filter 0.3s ease-in, color 0.1s ease-in;
   text-decoration: none;
 }
