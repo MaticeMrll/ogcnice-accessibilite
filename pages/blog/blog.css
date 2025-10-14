@@ -436,3 +436,13 @@ button:focus-visible,
     margin-top: 72px;
   }
 }
+a.header-link{
+  color: var(--accent);
+  transition: filter 0.3s ease-in, color 0.1s ease-in;
+  text-decoration: none;
+}
+
+a.header-link:hover{
+  text-decoration: underline;
+  color: #4d90fe;
+}               
