@@ -517,3 +517,9 @@ a.header-link:hover{
   text-decoration: underline;
   color: #4d90fe;
 }
+
+h3.image-overlay-title{
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
